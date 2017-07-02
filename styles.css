@@ -1,0 +1,208 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  color: #131511;
+  display: flex;
+}
+
+#site-header{
+  width: 100%;
+}
+
+main {
+  background-color: #F2F1E8;
+  margin: 20px 20px 0px 20px;
+}
+
+#main_navigation {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+
+}
+
+#main_navigation img{
+
+  height: 180px;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+ul {
+  width: 92%;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  margin: 0px 1.5em;
+}
+
+a {
+  color: #131511;
+}
+
+.bodywithbeige {
+    background-color: #F2F1E8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company_name {
+  height: 13em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+
+  width: 1500px;
+  height: 30px;
+  font-size: 100px;
+  font-weight: lighter;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+
+  width: 1500px;
+  height: 50px;
+  font-size: 55px;
+  font-weight: lighter;
+  margin-top: 100px;
+}
+
+.all_images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.top_row {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 100%;
+}
+
+.bottom_row {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 100%;
+}
+
+#succulents1 {
+  overflow: hidden;
+  height: 950px;
+  width: 100%;
+}
+
+#succulents4 {
+  overflow: hidden;
+  width: 730px;
+  height: 600px;
+}
+
+#succulents5 {
+  overflow: hidden;
+  width: 730px;
+  height: 600px;
+}
+
+#succulents6 {
+  overflow: hidden;
+  width: 840px;
+  height: 600px;
+}
+
+#succulents7 {
+  overflow: hidden;
+  width: 800px;
+  height: 600px;
+}
+
+#succulents1 img{
+  display: flex;
+  padding-right: 40px;
+  width: 100%;
+}
+
+#succulents2 img {
+  display: flex;
+  height: 950px;
+  object-fit: cover;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+#succulents3 img {
+  display: flex;
+  height: 950px;
+  object-fit: contain;
+}
+
+#succulents4 img {
+  display: flex;
+  padding-right: 30px;
+}
+
+#succulents5 img {
+  display: flex;
+  height: 700px;
+  object-fit: cover;
+  padding-right: 30px;
+
+}
+
+#succulents6 img {
+  display: flex;
+  height: 700px;
+  object-fit: cover;
+  padding-right: 30px;
+}
+
+#succulents7 img {
+  display: flex;
+  height: 700px;
+  object-fit: cover;
+  padding-right: 30px;
+}
+
+p {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+
+
+#site_footer {
+  background-color: #2A3025;
+  font-family: 'Merriweather', serif;
+  height: 120px;
+  color: white;
+  font-weight: lighter;
+
+  display: flex;
+  align-items: center;
+}
+
+#site_footer span {
+  padding: 40px;
+}
