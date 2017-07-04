@@ -7,74 +7,82 @@
     <style> @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i');
     </style>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header id="site-header">
-          <nav id="main_navigation">
-            <img src="images/bent-creek-logo.png" alt="logo">
-            <ul>
-              <li> <a href="index.html">Home</a></li>
-              <li> <a href="about.html">About</a></li>
-              <li> <a href="newsletter.html">Newsletter</a></li>
-            </ul>
-          </nav>
-      </header>
-    </div>
-    <div class="bodywithbeige">
-      <div class ="company_name">
+
+    <header>
+      <nav id="main_navigation">
+        <img src="images/bent-creek-logo.png" alt="logo">
+        <ul>
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="about.html">About</a></li>
+          <li> <a href="newsletter.html">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class ="company_name">
               <h1>Bent Creek Ceramics</h1>
               <h2>Where art meets nature</h2>
-      </div>
-      <main>
+        </div>
+
         <div class="all_images">
-          <div class="top_row">
+          <section class="top_row">
 
-            <div id="succulents1">
-              <img src="images/product-1.jpg" alt="succulents1">
+            <article id="succulents1">
                 <p class="top_captions">Endless Possibilities</p>
-            </div>
+            </article>
 
-            <div id="succulents2">
-              <img src="images/product-2.jpg" alt="succulents2">
+            <article id="succulents2">
               <p class="top_captions">Sets</p>
-            </div>
+            </article>
 
-            <div id="succulents3">
-              <img src="images/product-3.jpg" alt="succulents3">
+            <article id="succulents3">
               <p class="top_captions">Textures</p>
-            </div>
+            </article>
+          </section>
 
-          </div>
+          <section class="bottom_row">
 
-          <div class="bottom_row">
-
-            <div id="succulents4">
-              <img src="images/product-4.jpg" alt="succulents4">
+            <article id="succulents4">
               <p class="bottom_captions">Tea Time</p>
-            </div>
+            </article>
 
-            <div id="succulents5">
-              <img src="images/product-5.jpg" alt="succulents5">
+            <article id="succulents5">
               <p class="bottom_captions">Jars and Containers</p>
-            </div>
+            </article>
 
-            <div id="succulents6">
-              <img src="images/product-6.jpg" alt="succulents6">
+            <article id="succulents6">
               <p class="bottom_captions">Wasabi and Saki</p>
-            </div>
+            </article>
 
-            <div id="succulents7">
-              <img src="images/product-7.jpg" alt="succulents7">
+            <article id="succulents7">
               <p class="bottom_captions">Sippin' on Sunshine</p>
-            </div>
+            </article>
 
-          </div>
+          </section>
         </div>
       </main>
-    </div>
 
     <footer id="site_footer">
       <span>Copyright 2017, Bent Creek Ceramics</span>
     </footer>
+
+    <script type="text/javascript">
+      var nameInput = document.getElementById('nameInput');
+      var emailInput = document.getElementById('emailInput');
+      var signupButton = document.getElementById('signupButton');
+      signupButton.addEventListener('click', function(e) {
+      var nameVal = nameInput.value;
+      var emailVal = emailInput.value;
+      if (nameVal && emailVal) {
+        alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+        nameInput.value = "";
+        emailInput.value = "";
+        } else {
+        alert('We would love for you to sign up, please provide both your name and email address.');
+        }
+      });
+    </script>
   </body>
 </html>

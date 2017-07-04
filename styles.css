@@ -3,38 +3,42 @@
 body{
   margin: 0;
   padding: 0;
-}
+  background-color: #F2F1E8;
 
-.wrapper{
-  color: #131511;
   display: flex;
+  flex-direction: column;
 }
 
-#site-header{
+header {
+  background-color: #FFFFFF;
+  position:fixed;
   width: 100%;
+  z-index:1;
+  box-shadow: 2px 2px grey;
 }
 
 main {
-  background-color: #F2F1E8;
-  margin: 20px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Merriweather', sans-serif;
+  justify-content: center;
 }
 
 #main_navigation {
-  background-color: #FFFFFF;
   display: flex;
   align-items: center;
-
+  width: 100%;
+  color: #131511;
 }
 
 #main_navigation img{
-
-  height: 100px;
+  height: 60px;
   margin-top: 7px;
   margin-left: 10px;
 }
 
 ul {
-  width: 92%;
+  width: 85%;
   color: black;
   text-transform: uppercase;
   font-family: 'Roboto';
@@ -49,8 +53,16 @@ li {
   margin: 0px 1.5em;
 }
 
-a {
-  color: #131511;
+a:link {
+  color: #2B2F26;
+}
+
+a:hover {
+  color: #CD5D67
+}
+
+a:active {
+  color: #968772;
 }
 
 #site_footer {
@@ -67,18 +79,15 @@ a {
 #site_footer span {
   padding: 40px;
 }
+
+#site_footer span:focus {
+  color: #967343;
+}
 /**********************ALL PAGES*****************/
 
 /****************INDEXPAGE***************/
 
-.bodywithbeige {
-    background-color: #F2F1E8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .company_name {
-  height: 13em;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -89,9 +98,8 @@ a {
   display: flex;
   justify-content: center;
 
-  width: 1500px;
+  width: 100%;
   height: 30px;
-  font-size: 100px;
   font-weight: lighter;
 }
 
@@ -99,127 +107,99 @@ a {
   display: flex;
   justify-content: center;
 
-  width: 1500px;
+  width: 100%;
   height: 50px;
-  font-size: 55px;
   font-weight: lighter;
-  margin-top: 100px;
 }
 
 .all_images {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  width: 100%;
 }
 
 .top_row {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   padding: 20px;
   width: 100%;
+  overflow: hidden;
 }
 
 .bottom_row {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   padding: 20px;
   width: 100%;
+  overflow: hidden;
 }
 
 #succulents1 {
-  overflow: hidden;
-  height: 950px;
-  width: 100%;
+  background-image: url('images/product-1.jpg');
+  background-size: cover;
+  height: 300px;
+}
+
+#succulents2 {
+  background-image: url('images/product-2.jpg');
+  background-size: cover;
+}
+
+#succulents3 {
+  background-image: url('images/product-3.jpg');
+  background-size: cover;
+
 }
 
 #succulents4 {
-  overflow: hidden;
-  width: 730px;
-  height: 600px;
+  background-image: url('images/product-4.jpg');
+  background-size: cover;
+  height: 250px;
 }
 
 #succulents5 {
-  overflow: hidden;
-  width: 730px;
-  height: 600px;
+  background-image: url('images/product-5.jpg');
+  background-size: cover;
 }
 
 #succulents6 {
-  overflow: hidden;
-  width: 840px;
-  height: 600px;
+  background-image: url('images/product-6.jpg');
+  background-size: cover;
 }
 
 #succulents7 {
-  overflow: hidden;
-  width: 800px;
-  height: 600px;
-}
-
-#succulents1 img{
-  display: flex;
-  padding-right: 40px;
-  width: 100%;
-}
-
-#succulents2 img {
-  display: flex;
-  height: 950px;
-  object-fit: cover;
-  padding-right: 40px;
-  padding-left: 40px;
-}
-
-#succulents3 img {
-  display: flex;
-  height: 950px;
-  object-fit: contain;
-}
-
-#succulents4 img {
-  display: flex;
-  padding-right: 30px;
-}
-
-#succulents5 img {
-  display: flex;
-  height: 700px;
-  object-fit: cover;
-  padding-right: 30px;
-}
-
-#succulents6 img {
-  display: flex;
-  height: 700px;
-  object-fit: cover;
-  padding-right: 30px;
-}
-
-#succulents7 img {
-  display: flex;
-  height: 700px;
-  object-fit: cover;
-  padding-right: 30px;
+  background-image: url('images/product-7.jpg');
+  background-size: cover;
 }
 
 .top_captions {
   position: absolute;
-  padding: 20px 40px;
-  margin: 0;
-  margin-top: 20px;
-
+  padding: 20px;
+  margin-top: 14em;
   background-color: #2A3025;
   color: #F2F1E8;
+  display: flex;
 }
 
 .bottom_captions {
   position: absolute;
-  padding: 20px 40px;
-  margin: 0;
-  margin-top: 20px;
-
+  padding: 20px;
+  margin-top: 11em;
   background-color: #2A3025;
   color: #F2F1E8;
+  display: flex;
+}
+
+section {
+  display: flex;
+  padding: 0;
+}
+
+article {
+  width: 40%;
+  margin: 8px;
 }
 
 /*********************ABOUT PAGE***************/
@@ -235,51 +215,199 @@ a {
 .top {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  width: 60%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em 20em;
+}
+
+.about h1 {
+  font-size: 4em;
+}
+
+.first_paragraph {
+  width: 100%;
+}
+#birdhouse {
+  background-image: url('images/birdhouse.jpg');
+  height: 5em;
+  width: 20%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+.bird_paragraph {
+  width: 100%;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  margin: 0em 20em;
+}
+
+blockquote {
+  border-left: 2px solid lightgray;
+  width: 90%;
+  padding: 2em;
 }
 
 .bottom {
   display: flex;
   flex-direction: column;
   align-content: center;
-  width: 60%;
-}
-
-.top {
-  display: flex;
-}
-
-p {
-}
-
-.about h1 {
-  display: flex;
-  justify-content: center;
-  font-size: 48px;
+  margin: 0em 20em;
 }
 
 #middle_image {
-  width: 100%;
-}
-#middle_image img {
+  background-image: url('images/background-3.jpg');
+  height: 240px;
   background-size: cover;
+}
+
+#middle_image h1 {
+  color: #F2F1E8;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7em;
+}
+
+.facilities {
+  display: flex;
+}
+
+#facilities_text {
+  width: 70%;
+  padding-right: 2em;
+}
+
+#aside_image {
+  background-image: url('images/background-1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  margin-top: 2em;
+
+  float:right;
+}
+
+#aside_image p {
+  font-style: italic;
+  margin-top: 7em;
+}
+
+.monthly_plans {
+  margin-top: -1em;
 }
 
 table {
   border-collapse: collapse;
-  width: 500px;
+  width: 75%;
   margin-bottom: 40px;
 }
 
 td{
   border: 2px solid black;
   margin: 0px;
-  padding: 5px 20px 5px 20px;
+  padding: 1em;
 }
 
 th {
   border: 2px solid black;
-  padding: 5px 20px 5px 20px;
+  padding: 1em;
 }
+
+.colored {
+  background-color: #E8DFD0;
+}
+
+/********************************NEWSLETTER************************/
+
+.newsletter_background {
+  background-image: url('images/background-2.jpg');
+  width: 100%;
+}
+
+.newsletter_formbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  height: 60vh;
+  margin-top: 30vh;
+  padding: 2vh;
+}
+
+.sign_up_content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100vh;
+}
+
+.sign_up_message {
+  text-align: center;
+}
+
+.sign_up_message h1 {
+  font-size: 2em;
+  color: #968772;
+}
+
+.sign_up_message h2 {
+  font-size: 1.2em;
+  color: ##131511;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #968772;
+  margin: 1.5em;
+}
+
+input:focus {
+  color: #967343;
+}
+
+button {
+  margin-top: 3em;
+  background-color: #968772;
+  color: #F2F1E8;
+  margin: 1em 10em;
+  padding: 1em;
+}
+
+button:hover {
+  color: #FFFFFF;
+}
+
+article .sign_up_content {
+  width: 100%;
+}
+/*Visited sites
+header nav ul li a:hover {
+  color: link;
+}
+
+header nav ul li a:link {
+   color: white;
+}
+
+header nav ul li a:visited {
+  color: blue;
+}
+link, visited, focus, hover, active
+Lord voldemort fought hogwarts alumni
