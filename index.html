@@ -7,9 +7,7 @@
     <style> @import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i');
     </style>
   </head>
-
   <body>
-
     <header>
       <nav id="main_navigation">
         <img src="images/bent-creek-logo.png" alt="logo">
@@ -21,68 +19,63 @@
       </nav>
     </header>
     <main>
-        <div class ="company_name">
-              <h1>Bent Creek Ceramics</h1>
-              <h2>Where art meets nature</h2>
-        </div>
-
-        <div class="all_images">
-          <section class="top_row">
-
-            <article id="succulents1">
-                <p class="top_captions">Endless Possibilities</p>
-            </article>
-
-            <article id="succulents2">
-              <p class="top_captions">Sets</p>
-            </article>
-
-            <article id="succulents3">
-              <p class="top_captions">Textures</p>
-            </article>
-          </section>
-
-          <section class="bottom_row">
-
-            <article id="succulents4">
-              <p class="bottom_captions">Tea Time</p>
-            </article>
-
-            <article id="succulents5">
-              <p class="bottom_captions">Jars and Containers</p>
-            </article>
-
-            <article id="succulents6">
-              <p class="bottom_captions">Wasabi and Saki</p>
-            </article>
-
-            <article id="succulents7">
-              <p class="bottom_captions">Sippin' on Sunshine</p>
-            </article>
-
-          </section>
-        </div>
-      </main>
-
+      <div class ="company_name">
+        <h1>Bent Creek Ceramics</h1>
+        <h2>Where art meets nature</h2>
+      </div>
+      <div class="all_images">
+        <section class="top_row">
+          <article id="succulents1">
+            <p class="top_captions">Endless Possibilities</p>
+          </article>
+          <article id="succulents2">
+            <p class="top_captions">Sets</p>
+          </article>
+          <article id="succulents3">
+            <p class="top_captions">Textures</p>
+          </article>
+        </section>
+        <section class="bottom_row">
+          <article id="succulents4">
+            <p class="bottom_captions">Tea Time</p>
+          </article>
+          <article id="succulents5">
+            <p class="bottom_captions">Jars and Containers</p>
+          </article>
+          <article id="succulents6">
+            <p class="bottom_captions">Wasabi and Saki</p>
+          </article>
+          <article id="succulents7">
+            <p class="bottom_captions">Sippin' on Sunshine</p>
+          </article>
+        </section>
+      </div>
+    </main>
     <footer id="site_footer">
       <span>Copyright 2017, Bent Creek Ceramics</span>
     </footer>
-
     <script type="text/javascript">
-      var nameInput = document.getElementById('nameInput');
-      var emailInput = document.getElementById('emailInput');
-      var signupButton = document.getElementById('signupButton');
-      signupButton.addEventListener('click', function(e) {
-      var nameVal = nameInput.value;
-      var emailVal = emailInput.value;
-      if (nameVal && emailVal) {
-        alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
-        nameInput.value = "";
-        emailInput.value = "";
-        } else {
-        alert('We would love for you to sign up, please provide both your name and email address.');
-        }
-      });
-    </script>
+    var nameInput = document.getElementById("nameInput")
+var emailInput = document.getElementById("emailInput")
+var signupButton = document.getElementById("signupButton")
+signupButton.addEventListener("click", function(e) {
+  var nameVal = nameInput.value
+  var emailVal = emailInput.value
+  if (nameVal && emailVal) {
+    alert(
+      "Thanks for signing up, " +
+        nameVal +
+        ". Newsletters will be sent to " +
+        emailVal
+    )
+    nameInput.value = ""
+    emailInput.value = ""
+  } else {
+    alert(
+      "We would love for you to sign up, please provide both your name and email address."
+    )
+  }
+})
+</script>
   </body>
 </html>
